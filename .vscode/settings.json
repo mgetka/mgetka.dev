@@ -1,5 +1,5 @@
 {
-    // Prettier either is not capable fo proper handling of go based html templates, or I'm not
+    // Prettier either is not capable of proper handling of go based html templates, or I'm not
     // capable of configuring it right. Anyway, I'm done with it.
     "prettier.enable": false
 }
