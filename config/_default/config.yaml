@@ -1,0 +1,19 @@
+baseURL: https://mgetka.dev/
+languageCode: en
+
+title: Michał Getka
+
+markup:
+  goldmark:
+    parser:
+      autoHeadingIDType: github-ascii
+    renderer:
+      unsafe: true
+  highlight:
+    style: pygments
+
+timeZone: Europe/Warsaw
+
+disableKinds:
+  - taxonomy
+  - term

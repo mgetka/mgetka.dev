@@ -1,0 +1,37 @@
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="{{ .Site.Params.Author }}" />
+{{- with .Summary }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+{{- with .Keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{- end }}
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link rel="stylesheet" href="{{ (resources.Get "style/main.scss" | resources.ToCSS (dict "includePaths" (slice "node_modules")) | resources.Minify ).RelPermalink }}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{{ $favicon := resources.Get "img/favicon.png" }}
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ ($favicon.Fit "57x57").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ ($favicon.Fit "114x114").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ ($favicon.Fit "72x72").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ ($favicon.Fit "144x144").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ ($favicon.Fit "60x60").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ ($favicon.Fit "120x120").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{ ($favicon.Fit "120x120").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ ($favicon.Fit "76x76").RelPermalink }}"/>
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ ($favicon.Fit "152x152").RelPermalink }}"/>
+<link rel="icon" type="image/png" href="{{ ($favicon.Fit "196x196").RelPermalink }}" sizes="196x196"/>
+<link rel="icon" type="image/png" href="{{ ($favicon.Fit "128x128").RelPermalink }}" sizes="128x128"/>
+<link rel="icon" type="image/png" href="{{ ($favicon.Fit "96x96").RelPermalink }}" sizes="96x96"/>
+<link rel="icon" type="image/png" href="{{ ($favicon.Fit "32x32").RelPermalink }}" sizes="32x32"/>
+<link rel="icon" type="image/png" href="{{ ($favicon.Fit "16x16").RelPermalink }}" sizes="16x16"/>
+<title>
+    {{- block "title" . -}}
+        {{- if .Page.IsHome -}}
+            {{- .Site.Title -}}
+        {{- else -}}
+            {{- .Title }} - {{ .Site.Title -}}
+        {{- end -}}
+    {{- end -}}
+</title>

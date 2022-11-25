@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{ partial "base/head.html" . }}
+        {{ block "head" . }}{{ end }}
+    </head>
+    <body>
+        {{ partial "base/nav.html" ( dict "dot" . "dol" $ ) }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "base/footer.html" . }}
+    </body>
+</html>
