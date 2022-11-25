@@ -1,7 +1,7 @@
 baseURL: https://mgetka.dev/
 languageCode: en
 
-title: Michał Getka
+title: mgetka.dev
 
 markup:
   goldmark:

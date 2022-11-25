@@ -1,0 +1,13 @@
+#header-nav {
+    a {
+        color: $gray-500;
+        text-transform: uppercase;
+        font-family: $font-family-monospace;
+        font-weight: 100;
+
+        &:hover {
+            color: $white;
+            @include transition(.15s ease-in-out);
+        }
+    }
+}
