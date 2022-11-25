@@ -1,5 +1,9 @@
+$gradient-range-factor: 3%;
+$gradient-orientation: 233deg;
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background: $body-bg linear-gradient($gradient-orientation, lighten($body-bg, $gradient-range-factor), darken($body-bg, $gradient-range-factor));
 }
