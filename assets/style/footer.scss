@@ -1,5 +1,6 @@
 footer {
     color: $text-muted;
+    @include font-size(0.6rem);
 
     a {
         color: inherit;
