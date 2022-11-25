@@ -1,8 +1,17 @@
-footer a {
-    color: inherit;
+footer {
+    color: $text-muted;
 
-    &:hover {
+    a {
         color: inherit;
-        text-decoration: underline;
+
+        &:hover {
+            color: lighten($text-muted, 10%);
+            @include transition(.15s ease-in-out);
+            text-decoration: inherit;
+        }
+
+        &.repo-link {
+            text-decoration: underline;
+        }
     }
 }
