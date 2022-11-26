@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="container mt-auto mb-3" id="landing">
+    <p class="lead mb-1 mt-3">
+        Hi, I'm <strong class="author-name">{{ .Site.Params.author }}</strong>!
+    </p>
+    {{ with .Params.roles}}
+    <ul id="roles-list">
+        {{ range . }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    {{ with .Params.subtext }}
+    <p class="text-muted subtext">{{ . }}</p>
+    {{ end }}
+    {{ with .Params.social }}
+    <hr/>
+    <ul class="social list-inline">
+        {{ range . }}
+        <li class="list-inline-item mr-2"><a href="{{ .link }}"><i class="{{ .class }}"></i></a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</div>
+{{ end }}

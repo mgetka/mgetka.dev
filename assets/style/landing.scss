@@ -1,0 +1,87 @@
+#landing {
+    .author-name {
+        white-space: nowrap;
+    }
+
+    .social {
+        a {
+            color: $text-muted;
+            font-size: $font-size-base * 1.5;
+
+            @include media-breakpoint-up(sm) {
+                font-size: $font-size-base * 2;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-size: $font-size-base * 2.5;
+            }
+
+            &:hover {
+                color: lighten($text-muted, 40%);
+                @include transition(.15s ease-in-out);
+            }
+        }
+    }
+
+    .lead {
+        font-weight: 100;
+        line-height: $display-line-height;
+        @include font-size(4rem);
+
+        @include media-breakpoint-up(sm) {
+            @include font-size(5rem);
+        }
+
+        @include media-breakpoint-up(md) {
+            @include font-size(5.5rem);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(6rem);
+        }
+    }
+
+    .roles-display {
+
+        font-weight: 200;
+        line-height: $display-line-height;
+
+        @include font-size(1rem);
+
+        @include media-breakpoint-up(sm) {
+            @include font-size(2rem);
+        }
+
+        @include media-breakpoint-up(md) {
+            @include font-size(3rem);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(3.5rem);
+        }
+
+        span {
+            border-right: 0.12rem solid rgba($body-color, 0.5);
+            animation: blinking-cursor 1s ease-in-out infinite;
+        }
+
+        @keyframes blinking-cursor {
+            50% {
+                border-right-color: rgba($body-color, 0);
+            }
+        }
+    }
+
+    .subtext {
+        font-weight: 300;
+        line-height: $display-line-height;
+
+        @include font-size(0.8rem);
+
+        @include media-breakpoint-up(sm) {
+            @include font-size(1rem);
+        }
+
+    }
+
+}
