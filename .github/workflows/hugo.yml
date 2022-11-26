@@ -36,6 +36,8 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Use Node.js
+        uses: actions/setup-node@v3
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -43,6 +45,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      - name: Get dependencies
+        run: npm install
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
