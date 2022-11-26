@@ -7,8 +7,8 @@ $(function () {
         hamburger.addClass("opened");
     });
 
-    collapsible.on("hide.bs.collapse	", function () {
+    collapsible.on("hide.bs.collapse", function () {
         hamburger.removeClass("opened");
-    })
+    });
 
 });

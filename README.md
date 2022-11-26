@@ -1,7 +1,7 @@
 Michał Getka's personal website
 ============================================
 
-This repository contains my personal website source. The site is accessible on [mgetka.dev](https://mgetka.dev). The site was built to try out the GitHub pages service and have some fun with hugo. At some point, maybe I will push myself to publish  some more content in this place.
+This repository contains my personal website source. The site is accessible on [mgetka.dev](https://mgetka.dev). The site was built to try out the GitHub pages service and have some fun with hugo. At some point, maybe I will push myself to publish some more content in this place.
 
 ## Licenses
 
