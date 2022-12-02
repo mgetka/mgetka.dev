@@ -1,0 +1,66 @@
+.bio-summary {
+
+    dt,
+    dd,
+    p {
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+
+        dt,
+        dd,
+        p {
+            text-align: left;
+        }
+    }
+
+    dt {
+        font-family: $headings-font-family;
+        font-weight: 900;
+        @include font-size(1.3rem);
+        color: $gray-400;
+
+        i {
+            min-width: map-get($spacers, 3);
+            color: $gray-500;
+        }
+    }
+
+    dd {
+        margin-bottom: map-get($spacers, 2);
+        color: $gray-500;
+    }
+
+    .bio-education {
+        .authority {
+            font-weight: 500;
+            color: $gray-400;
+            display: block;
+        }
+
+        .degree {
+            font-style: italic;
+        }
+    }
+}
+
+.bio-portrait {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+        margin-right: 1rem;
+    }
+
+    img {
+        filter: grayscale(1);
+        max-width: 15rem;
+
+        @include media-breakpoint-up(md) {
+            max-width: unset;
+        }
+
+    }
+
+}

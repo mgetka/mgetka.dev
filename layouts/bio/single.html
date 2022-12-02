@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ $portrait := .Resources.Get "portrait.jpg" }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mb-3 bio-portrait">
+                {{ with $portrait.Fill "600x600 Lanczos" }}
+                <img src="{{ .RelPermalink }}" class="w-100 rounded-circle">
+                {{ end }}
+            </div>
+            <div class="bio-summary">
+                <p class="h2">Michał Getka</p>
+                <dl>
+                    <dt><i class="fa-solid fa-location-dot"></i> Location</dt>
+                    <dd> {{ .Params.location }}</dd>
+                    <dt><i class="fa-solid fa-earth-europe"></i> Languages</dt>
+                    <dd> {{ delimit .Params.languages ", " }}</dd>
+                    <dt><i class="fa-solid fa-graduation-cap"></i> Education</dt>
+                    <dd class="bio-education">
+                        <ul class="list-unstyled">
+                            {{ range .Params.education }}
+                                <li>
+                                    <span class="authority">{{ .authority }}</span>
+                                    <span class="field">{{ .field }}</span>
+                                    <span class="degree">({{ .degree }})</span>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <hr class="d-md-none">
+        </div>
+        <div class="col-md-8">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">
+            {{ .Params.lead }}
+        </p>
+        {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
