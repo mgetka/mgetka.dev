@@ -1,5 +1,12 @@
 .bio-summary {
 
+
+    .bio-author {
+        @include font-size(2rem);
+        font-family: $headings-font-family;
+        font-weight: 500;
+    }
+
     dt,
     dd,
     p {
