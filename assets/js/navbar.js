@@ -1,3 +1,5 @@
+var $ = require( "jquery" );
+
 $(function () {
 
     var collapsible = $("#header-nav .navbar-collapse.collapse");
