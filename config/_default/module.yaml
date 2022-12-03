@@ -1,0 +1,3 @@
+mounts:
+  - source: node_modules/@fortawesome/fontawesome-free/webfonts
+    target: static/webfonts
