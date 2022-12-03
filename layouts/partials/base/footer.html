@@ -1,6 +1,6 @@
-<footer class="mt-auto container mb-2">
+<footer class="mt-auto container mb-1">
     <p class="text-center">
-        &copy; {{ now.Year }} {{ .Site.Params.author }}, <a href="{{ .Site.Params.licenseUrl }}">{{ .Site.Params.license }} license</a>.<br>
+        &copy; {{ now.Year }} {{ .Site.Params.author }}, <a href="{{ .Site.Params.licenseUrl }}">{{ .Site.Params.license }} license</a>. <a href="{{ relref . "privacy" }}">Privacy policy</a>.<br>
         Hosted on <a href="https://pages.github.com/">GitHub Pages</a>, built with <a href="https://gohugo.io/">Hugo</a>! View <a href="{{ .Site.Params.repoUrl }}" class="repo-link">the source on GitHub</a>.
     </p>
 </footer>
