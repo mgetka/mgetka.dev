@@ -11,7 +11,7 @@ _TLDR_
 
 ## Introduction
 
-This document describes the privacy policy of _mgetka.dev_ website. The site is a personal website of Michał Getka. Below you can find the details on what kind of data referring to you - the website visitor - are processed in the service and what parties can have access to it. The document also contains the details about the cookie files and other technologies that could have been used to track users activity.
+This document describes the privacy policy of _mgetka.dev_ website. The site is a personal website of Michał Getka. Below you can find the details on what kind of data referring to you --- the website visitor --- are processed in the service and what parties can have access to it. The document also contains the details about the cookie files and other technologies that could have been used to track users activity.
 
 ## Access log
 
