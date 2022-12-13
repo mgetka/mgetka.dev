@@ -1,5 +1,7 @@
 mounts:
   - source: node_modules/@fortawesome/fontawesome-free/webfonts
-    target: static/webfonts
+    target: static/fonts
+  - source: static/fonts
+    target: static/fonts
   - source: static
     target: static
