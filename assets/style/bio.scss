@@ -1,6 +1,4 @@
 .bio-summary {
-
-
     .bio-author {
         @include font-size(2rem);
         font-family: $headings-font-family;
@@ -67,7 +65,5 @@
         @include media-breakpoint-up(md) {
             max-width: unset;
         }
-
     }
-
 }

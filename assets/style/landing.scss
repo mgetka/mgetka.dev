@@ -1,5 +1,4 @@
 #landing {
-
     font-family: $headings-font-family;
 
     .author-name {
@@ -45,7 +44,6 @@
     }
 
     .roles-display {
-
         font-weight: 200;
         line-height: $display-line-height;
 
@@ -84,7 +82,5 @@
         @include media-breakpoint-up(sm) {
             @include font-size(1rem);
         }
-
     }
-
 }
