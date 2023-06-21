@@ -7,3 +7,7 @@ body {
     flex-direction: column;
     background: $body-bg linear-gradient($gradient-orientation, lighten($body-bg, $gradient-range-factor), darken($body-bg, $gradient-range-factor));
 }
+
+:root {
+    color-scheme: dark;
+}
