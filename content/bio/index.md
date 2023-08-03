@@ -25,4 +25,4 @@ I had my first contact with software development back in the primary school, whe
 
 In the meantime, I have graduated in the field of industrial automation and robotics. Besides of having fun with the industrial robots, this gave me a solid foundations in the fields of mathematics, statistics, optimization, control theory, electronics design and embedded systems programming. In the past, this skill set allowed me to actively take part in a number of projects in the fields of space industries and computer networks on an engineering and scientific positions.
 
-Privately, I'm a proud father of a brilliant little girl. I enjoy winter sports and assembling of _LEGO Technic_ sets. I also see myself as new technologies enthusiast and Linux fanboy --- and while writing this I cry inside a little, since those words are written on a Mac.
+Privately, I'm a proud father of a brilliant little girl. I enjoy winter sports and assembling of _LEGO Technic_ sets. I also see myself as new technologies enthusiast and Linux fanboy.
